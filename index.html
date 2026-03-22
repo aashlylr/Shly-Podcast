@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Shly Podcast</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #cbd5f5;
+    }
+
+    nav {
+      background: #020617;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #f1f5f9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .episode {
+      background: #1e293b;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+
+    .episode h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      margin-top: 30px;
+      color: #94a3b8;
+    }
+
+    button {
+      background: #38bdf8;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      color: #020617;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>The Shly Podcast</h1>
+    <p>Real talk, random thoughts, and everything in between.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#episodes">Episodes</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="about">
+      <h2>About the Podcast</h2>
+      <p>
+        Welcome to The Shly Podcast! This is where we talk about life, trends,
+        ideas, and whatever's on our minds. New episodes drop regularly — stay tuned!
+      </p>
+    </section>
+
+    <section id="episodes">
+      <h2>Episodes</h2>
+
+      <div class="episode">
+        <h3>Episode 1: Getting Started</h3>
+        <p>An introduction to the podcast and what you can expect.</p>
+        <audio controls>
+          <source src="episode1.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+      <div class="episode">
+        <h3>Episode 2: Random Thoughts</h3>
+        <p>Talking about life, ideas, and random topics.</p>
+        <audio controls>
+          <source src="episode2.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Have feedback or ideas? Reach out!</p>
+      <button onclick="contactAlert()">Email Me</button>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2026 The Shly Podcast</p>
+  </footer>
+
+  <script>
+    function contactAlert() {
+      alert("Add your email link here!");
+    }
+  </script>
+
+</body>
+</html>
